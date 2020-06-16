@@ -1,3 +1,7 @@
+:root {
+  --font--:'MuseoModerno', cursive;
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -21,6 +25,8 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    
 }
 
 #header .menu {
@@ -32,6 +38,7 @@ html, body {
     justify-content: space-between;
     top: 0;
     position: fixed;
+    
 }
 
 #header .menu nav {
@@ -50,7 +57,16 @@ html, body {
     width: 500px;
     font-size: 50px;
     text-align: center;
-    text-shadow: 2px 2px #0ff, -2px -2px red, 0px 4px #f0f;
+    font-size: 60px;
+    color: white;
+    text-shadow: 3px 3px rgb(12, 12, 12), -3px -3px rgb(12, 12, 12);
+    font-family: 'Staatliches', cursive;
+}
+
+#header .cont-h1 {
+  padding: 20px 0px;
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
 }
 
 
@@ -83,9 +99,48 @@ html, body {
       text-decoration: none;
         color: white;
       width: 100px;
+
+      font-size: 16px;
+      letter-spacing: -1px;
+      font-family: var(--font--);
+
+      transition-duration: 0.2s;
   }
+
+  .text a:hover {
+    color: #99fff8;
+  }
+
   .svg-wrapper:hover .shape {
     stroke-width: 2px;
     stroke-dashoffset: 0;
     stroke-dasharray: 760;
+  }
+
+  div.call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.call .button {
+    width: 40%;
+    background-color: #16aca2;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+    transition-duration: 0.2s;
+
+    font-size: 16px;
+      letter-spacing: -1px;
+      font-family: var(--font--);
+      cursor: pointer;
+  }
+
+  div.call .button:hover {
+    background-color: #178a82;
   }
