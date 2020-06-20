@@ -1,0 +1,30 @@
+#header .cont-menu {
+    justify-content: space-around !important;
+}
+
+#header .menu nav, #header .menu .midias {
+    display: none !important;
+}
+
+.bars-icon {
+    display: block !important;
+}
+
+.open {
+    right: 0px !important; 
+}
+
+/* !MAX-WIDTH 500 */
+
+@media screen and (max-width: 500px) {
+    .call .cont-h1 {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .call .cont-h1 h1 {
+        font-size: 20px !important;
+    }
+}
