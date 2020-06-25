@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="/img/logo.ico">
+
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Document</title>
+    <title>Rodrigo Personal Trainer</title>
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="queries.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,9 +21,13 @@
 <div id="body">
     
     <div class="side-menu">
+        <h1>Rodrigo Team</h1>
+
+        <i v-on:click='closeSideMenu' class="fa fa-window-close close-icon"></i>
+
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">Sobre mim</a></li>
             <li><a href="#">Treinos</a></li>
             <li><a href="#">Depoimentos</a></li>
         </ul>
@@ -32,22 +40,19 @@
                 <i class="fa fa-facebook-square icon"></i>
             </a>
         </div>
-        {{ isOpen }}
-        <button v-on:click="closeSideMenu">aaaaaaaa</button>
     </div>
 
-    <div id='header'>
-        <div class="menu">
-            <div class="cont-menu">
+    <div class="menu">
+        <div class="cont-menu">
 
-                <div class="svg">
-                    
+            <div class="svg">
+                
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+"http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="2529.000000pt" height="1668.000000pt" viewBox="0 0 2529.000000 1668.000000"
- preserveAspectRatio="xMidYMid meet">
+width="2529.000000pt" height="1668.000000pt" viewBox="0 0 2529.000000 1668.000000"
+preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,1668.000000) scale(0.100000,-0.100000)" stroke="none">
 <path d="M11490 14085 c-200 -49 -379 -209 -445 -396 -9 -24 -277 -1018 -596
@@ -87,75 +92,92 @@ c3 3945 10 3589 -75 3765 -85 176 -257 315 -453 366 -58 15 -139 18 -720 20
 </g>
 </svg>
 
-                </div>
-
-                <nav>
-                <div class="svg-wrapper">
-                    <svg height="25" width="75" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="shape" height="25" width="75">
-                          <div class="text"><a href="#">Home</a></div>
-                        </rect>
-                    </svg>
-                </div>
-
-                <div class="svg-wrapper">
-                    <svg height="25" width="105" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="shape" height="25" width="105">
-                          <div class="text"><a href="#">Sobre mim</a></div>
-                        </rect>
-                    </svg>
-                </div>
-
-                <div class="svg-wrapper">
-                    <svg height="25" width="80" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="shape" height="25" width="80">
-                          <div class="text"><a href="#">Treinos</a></div>
-                        </rect>
-                    </svg>
-                </div>
-
-                <div class="svg-wrapper">
-                    <svg height="25" width="125" xmlns="http://www.w3.org/2000/svg">
-                        <rect class="shape" height="25" width="125">
-                          <div class="text"><a href="#">Depoimentos</a></div>
-                        </rect>
-                    </svg>
-                </div>
-                <!-- <a href="#">Sobre Mim</a>
-                <a href="#">Como Funciona</a>
-                <a href="#">Antes e Depois</a>
-                <a href="#">Depoimentos</a> -->
-                </nav>
-                
-                <div class="midias">
-                    <a href="https://www.instagram.com/rodri_personaltrainer/" target="_blank" >
-                        <i class="fa fa-instagram icon"></i>
-                    </a>
-                    <a href="https://www.facebook.com/rodrigo.rodriguesdasilva.16" target="_blank">
-                        <i class="fa fa-facebook-square icon"></i>
-                    </a>
-                </div>
-
-                <i v-on:click="openSideMenu" class="fa fa-bars bars-icon"></i>                    
-                
             </div>
+
+            <nav>
+            <div class="svg-wrapper">
+                <svg height="25" width="75" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="25" width="75">
+                      <div class="text"><a href="#header">Home</a></div>
+                    </rect>
+                </svg>
+            </div>
+
+            <div class="svg-wrapper">
+                <svg height="25" width="105" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="25" width="105">
+                      <div class="text"><a href="#about">Sobre mim</a></div>
+                    </rect>
+                </svg>
+            </div>
+
+            <div class="svg-wrapper">
+                <svg height="25" width="80" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="25" width="80">
+                      <div class="text"><a href="#">Treinos</a></div>
+                    </rect>
+                </svg>
+            </div>
+
+            <div class="svg-wrapper">
+                <svg height="25" width="125" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="shape" height="25" width="125">
+                      <div class="text"><a href="#">Depoimentos</a></div>
+                    </rect>
+                </svg>
+            </div>
+            <!-- <a href="#">Sobre Mim</a>
+            <a href="#">Como Funciona</a>
+            <a href="#">Antes e Depois</a>
+            <a href="#">Depoimentos</a> -->
+            </nav>
+            
+            <div class="midias">
+                <a href="https://www.instagram.com/rodri_personaltrainer/" target="_blank" >
+                    <i class="fa fa-instagram icon"></i>
+                </a>
+                <a href="https://www.facebook.com/rodrigo.rodriguesdasilva.16" target="_blank">
+                    <i class="fa fa-facebook-square icon"></i>
+                </a>
+            </div>
+
+            <i v-on:click="openSideMenu" class="fa fa-bars bars-icon"></i>                    
+            
         </div>
+    </div>
+
+    <div id='header'>
+       
         
         <div class="call">
+            <h1>RODRIGO Personal</h1>
             <div class="cont-h1">
-                <h1 class="foto">
-                    TREINO PARA TODOS OS GOSTOS E IDADES
-                </h1>
+                <h2 class="foto">
+                    TREINOS PERSONALIZADOS
+                </h2>
             </div>
 
             <a class="button">Assinar</a>
         </div>
     </div>
 
-    <section class="header-cards">
-        <div class="h-card">
-
+    <section class="myArea" id="about">
+        <div class="whyMine">
+            <div>
+                <h3>
+                    <span>Sobre Mim</span>
+                </h3>
+                <p>Rodrigo Rodrigues Da Silva</p>
+            </div>
+            <div>
+                Sempre fui bom aluno na escola, mas a disciplina que me destacava era educação física.
+                Mas tive habilidade aprender as modalidades esportivas, e isso me fez acreditar que ser Professor de Educação física era um sonho. 
+                Acabei fazendo 4 semestre de engenharia, mas não estava feliz com minha escolha, então troquei de curso para Educação física, e tudo mudou.
+                Conclui a licenciatura e depois o bacharel em Educação física, depois uma pós graduação em treinamento resistido a musculação
+            </div>
         </div>
+        <div class="test"></div>
+        <img src="img/rodrigo.jpeg" class="rodrigo"></img>
     </section>
 </div>
     

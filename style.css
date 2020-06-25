@@ -10,7 +10,8 @@
 }
 
 html, body {
-    height: 1000px;
+    height:5000px;
+    scroll-behavior: smooth;
 }
 
 /* !HEADER COMPONENT */
@@ -26,36 +27,36 @@ html, body {
     align-items: center;
     justify-content: center;
     border-radius: 0px 0px 20px 20px;
-
-    
 }
 
-#header .menu {
+.menu {
     width: 100vw;
     height: 50px;
     background: rgba(70, 66, 57, 0.3);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     top: 0;
     position: fixed;
+    z-index: 9999;
     
 }
 
-#header .menu nav {
+.menu nav {
     display: flex;
 }
 
-#header .menu .cont-menu {
+.menu .cont-menu {
     display: flex;
     margin: 0px auto;
     width: 80%;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
 }
 
-#header .foto {
-    font-size: 50px;
+.foto {
+    font-size: 1.5rem;
     text-align: center;
     font-size: 60px;
     color: white;
@@ -64,7 +65,7 @@ html, body {
 }
 
 #header .cont-h1 {
-  width: 80%;
+  width: 90%;
   padding: 20px 0px;
   border-top: 5px solid white;
   border-bottom: 5px solid white;
@@ -136,6 +137,13 @@ html, body {
     justify-content: center;
   }
 
+  div.call h1 {
+    font-size: 70px;
+    color: white;
+    text-shadow: 3px 3px rgb(12, 12, 12), -3px -3px rgb(12, 12, 12);
+    font-family: 'Staatliches', cursive;
+  }
+
   div.call .button {
     width: 40%;
     background-color: #16aca2;
@@ -184,35 +192,9 @@ html, body {
   }
 
   @media screen and (max-width: 780px) {
-    #header .cont-menu {
+    .cont-menu {
       width: 100% !important;
     }
-  }
-
-  /* !CARDS */
-
-  .header-cards {
-    background-color: white;
-    width: 80%;
-    height: 200px;
-    margin: 0px auto;
-    border-radius: 20px;
-    position: relative;
-    top: -100px;
-
-    -webkit-box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.75);
-  }
-
-  .bars-icon {
-    font-size: 30px;
-    color: white;
-    display: none;
-  }
-
-  .bars-icon:hover {
-    color: #178a82;
   }
 
   /* *SIDE-MENU */
@@ -221,7 +203,7 @@ box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.75);
     width: 200px;
     right: -200px;
     top: 0px;
-    z-index: 9000;
+    z-index: 90000;
     background-color: gray;
     position: fixed;
     display: flex;
@@ -250,12 +232,157 @@ box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.75);
     background-color: #11756f;
   }
 
-  .side-menu ul li:hover a {
-  }
-
   .side-menu ul li a {
     color: white;
     text-decoration: none;
     font-family: var(--font--);
     transition-duration: 0.2s;
+  }
+
+  .side-menu h1 {
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px 0px;
+    color: white;
+    text-shadow: 3px 3px rgb(12, 12, 12), -3px -3px rgb(12, 12, 12);
+    font-family: 'Staatliches', cursive;
+  }
+
+  .close-icon {
+    font-size: 30px;
+    color: white;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+
+  .close-icon:hover {
+    color: #11756f;
+  }
+
+  .bars-icon {
+    font-size: 30px;
+    color: white;
+    display: none;
+    cursor: pointer;
+  }
+
+  .bars-icon:hover {
+    color: #178a82;
+  }
+
+    /* !MY AREA */
+
+  .myArea {
+    margin: 0px auto;
+    width: 100%;  
+    /* background-color: red; */
+    /* height: 100vh; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }  
+
+  .myArea .rodrigo {
+    margin-top: 30px;
+    width: 30%;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.75);
+  }
+
+  .myArea .whyMine {
+    width: 40%;
+    height: 60%;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    font-size: 20px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .myArea h3 {
+    font-size: 50px;
+    padding: 20px 0px;
+    color: white;
+    text-shadow: 
+      3px 3px rgb(12, 12, 12), 
+      -3px -3px rgb(12, 12, 12), 
+      0px 0px rgb(12, 12, 12),
+      2px 2px rgb(12, 12, 12),
+      -2px -2px rgb(12, 12, 12),
+      1px 1px rgb(12, 12, 12),
+      -1px -1px rgb(12, 12, 12);
+  }
+
+  .myArea h3::after {
+    content: '';
+    margin-top: 35px;
+    margin-left: -55px;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(207, 1, 1);
+  }
+
+  .myArea h3::before {
+    content: '';
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 170px;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: rgb(27, 27, 255);
+  }
+
+  .myArea h3 span {
+    z-index: 1000;
+    position: relative;
+  }
+
+  .myArea p {
+    font-size: 20px;
+    padding: 5px 0px;
+    position: relative;
+    top: -25px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+  }
+  .myArea div.test {
+    background-image: url('img/heath.png');
+    opacity: 20%;
+    /* align-self: start; */
+    /* justify-self: flex-start; */
+    left: 0px;
+    height: 200px;
+    width: 200px;
+    margin-top: 200px;
+    margin-left: 50px;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (max-width: 850px) {
+    .myArea {
+      flex-direction: column;
+    }
+
+    .myArea .whyMine {
+      width: 80%;
+    }
+
+    .myArea .rodrigo {
+      width: 50%;
+      margin-top: 30px;
+    }
+
+    .myArea .test {
+      display: none;
+    }
   }

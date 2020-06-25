@@ -1,5 +1,5 @@
 const header = new Vue({
-    el: '#header',
+    el: '#body',
     data: {
         isOpen: 'open',
     },

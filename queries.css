@@ -1,8 +1,8 @@
-#header .cont-menu {
+.cont-menu {
     justify-content: space-around !important;
 }
 
-#header .menu nav, #header .menu .midias {
+.menu nav, .menu .midias {
     display: none !important;
 }
 
@@ -12,6 +12,16 @@
 
 .open {
     right: 0px !important; 
+}
+
+.call h1 {
+    display: none;
+}
+
+.myArea .rodrigo {
+    margin-top: 20px !important;
+    width: 80% !important;
+    background-size: 100% 100% !important;
 }
 
 /* !MAX-WIDTH 500 */
@@ -24,7 +34,66 @@
         align-items: center;
     }
 
-    .call .cont-h1 h1 {
-        font-size: 20px !important;
+    .header-cards .h-card {
+        flex-basis: 100px !important;
+    }
+
+    .header-cards .h-card h3 {
+        font-size: 16px !important;
+    }
+
+    .header-cards .h-icon {
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+
+/* !MAX-WIDTH 430 */
+
+@media screen and (max-width: 430px) {
+    .call .cont-h1 h2 {
+        font-size: 40px !important;
+    }
+}
+
+/* !MAX-WIDTH 310 */
+
+@media screen and (max-width: 350px) {
+    .header-cards .cont-cards {
+        display: none !important;
+    }
+
+    .myArea .whyMine {
+        font-size: 16px !important;
+    }
+
+    .myArea .whyMine h3::after {
+        width: 70px;
+        height: 20px;
+    }
+
+    .myArea .whyMine h3::before {
+        margin-left: 190px;
+        width: 70px;
+        height: 20px;
+    }
+}
+
+/* !305 */
+@media screen and (max-width: 305px) {
+    .myArea .whyMine h3 {
+        font-size: 40px !important;
+    }
+
+    .myArea .whyMine h3::after {
+        display: none;
+    }
+
+    .myArea .whyMine h3::before {
+        display: none;
+    }
+
+    .call .cont-h1 h2.foto {
+        font-size: 25px !important;
     }
 }
