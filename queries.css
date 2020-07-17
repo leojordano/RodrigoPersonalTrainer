@@ -24,6 +24,30 @@
     background-size: 100% 100% !important;
 }
 
+.myArea .whyMine {
+    font-size: 17px !important;
+}
+
+.cont-types .type {
+    /* background-color: red; */
+    padding: 10px;
+    width: 100% !important;
+    height: auto !important;
+    flex-direction: column-reverse !important;
+}
+
+.cont-types .type .cont-h4 {
+    width: 100% !important;
+}
+
+.cont-types .type .maca {
+    margin-bottom: 20px;
+}
+
+.deeps .cont-deep .deep h3 {
+    font-size: 20px;
+}
+
 /* !MAX-WIDTH 500 */
 
 @media screen and (max-width: 500px) {
@@ -56,7 +80,23 @@
     }
 }
 
+@media screen and (max-width: 410px) {
+    .treinos h3 {
+        font-size: 40px !important;
+    }
+
+    .deeps .cont-deep .deep h3 {
+        font-size: 16px;
+    }
+}
+
 /* !MAX-WIDTH 310 */
+
+@media screen and (max-width: 330px) {
+    .treinos h3 {
+        font-size: 35px !important;
+    }
+}
 
 @media screen and (max-width: 350px) {
     .header-cards .cont-cards {
@@ -95,5 +135,14 @@
 
     .call .cont-h1 h2.foto {
         font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width: 287px) {
+    .treinos h3 {
+        width: 100%;
+        font-size: 30px !important;
+        justify-self: center !important;
+        text-align: center;
     }
 }
