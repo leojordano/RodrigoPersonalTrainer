@@ -19,7 +19,6 @@
 </head>
 <body>
 <div id="body">
-    
     <div class="side-menu">
         <h1>Rodrigo Team</h1>
 
@@ -91,7 +90,7 @@ c3 3945 10 3589 -75 3765 -85 176 -257 315 -453 366 -58 15 -139 18 -720 20
 -950 75 -654 1 -781 0 -840 -13z"/>
 </g>
 </svg>
-
+<h1>RODRIGO Personal</h1>
             </div>
 
             <nav>
@@ -150,7 +149,6 @@ c3 3945 10 3589 -75 3765 -85 176 -257 315 -453 366 -58 15 -139 18 -720 20
        
         
         <div class="call">
-            <h1>RODRIGO Personal</h1>
             <div class="cont-h1">
                 <h2 class="foto">
                     TREINOS PERSONALIZADOS
@@ -253,55 +251,66 @@ Hoje trabalha como Personal Trainer com a função de ajudar pessoas a encontrar
         </div>
     </section>
 
-    <div class="deeps">
-        <h2>Depoimentos</h2>
-
-        <div class="cont-deeps">
-            <div class="deep">
-                <div class="side-one">
-                    <h3>Graça</h3>
-                    <span>
-                        Já treino com o personal Rodrigo há um ano e com os treinos que ele me passa 
-                        consegui: corrigir a postura, não sinto mais dores nas costas, consegui perder peso e 
-                        graças a ele consegui o meu corpo ideal, além de todos os benefícios de saude
-                    </span>
-                </div>  
-
-                <div class="side-two">
-                    <img src="img/rodrigo.jpeg" alt="">
-                </div>
+    <div class="deeps-session">
+        <h3>Depoimentos</h3>
+       <div class="cont-deeps">
+            <div class="deeps-btn">
+                <button id='graca' v-on:click="setTab('graca')" >Graça</button>
+                <button id='ivani' v-on:click="setTab('ivani')" >Ivani</button>
+                <button id='casal' v-on:click="setTab('casal')" >Ricardo e Carolina</button>
             </div>
 
-            <div class="deep">
-                <div class="side-one">
-                    <h3>Ivani</h3>
-                    <span>
-                        Sempre tive dificuldade em ir a  academia e resolvi contratar um profissional para poder me disciplinar e comecei a treinar com o Rodrigo. Ele quis saber qual o meu objetivo e o detalhe principal, nunca me deixou na zona de conforto.
-Em poucos meses vi meu corpo se transformar, porque ele sabe qual o melhor treino, qual a necessidade  e tira de você o seu máximo, goste você ou não!
-Ter um profissional assim, é o melhor investimento que você pode fazer por você.
-Fora isso, não adianta ser apenas um bom profissional, ele é ímpar, de caráter, respeito, parceiro, amigo. É uma pessoa que terei para o resto da minha vida.
-                    </span>
-                </div>  
+            <div class="deeps">
+                <div data-id='graca' data-default='true' class="deep">
+                    <div>
+                        <span>
+                            Olá, me chamo Graca.
+                            Já treino com o personal Rodrigo há um ano e com os treinos que ele me passa consegui: corrigir a postura, não sinto mais dores nas costas, consegui perder peso e graças a ele consegui o meu corpo ideal, além de todos os benefícios de saude
+                        </span>
 
-                <div class="side-two">
-                    <img src="img/rodrigo.jpeg" alt="">
+                        <div>
+                            <img src="img/rodrigo.jpeg" width="250px" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div data-id='ivani' class="deep">
+                    <div>
+                        <span>
+                            Sempre tive dificuldade em ir a  academia e resolvi contratar um profissional para poder me disciplinar e comecei a treinar com o Rodrigo. Ele quis saber qual o meu objetivo e o detalhe principal, nunca me deixou na zona de conforto.
+    Em poucos meses vi meu corpo se transformar, porque ele sabe qual o melhor treino, qual a necessidade  e tira de você o seu máximo, goste você ou não!
+    Ter um profissional assim, é o melhor investimento que você pode fazer por você.
+    Fora isso, não adianta ser apenas um bom profissional, ele é ímpar, de caráter, respeito, parceiro, amigo. É uma pessoa que terei para o resto da minha vida.
+                        </span>
+
+                        <div>
+                            <img src="img/rodrigo.jpeg" width="300px" height="300px" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div data-id='casal' class="deep">
+                    <div>
+                        <span>
+                            Começamos a treinar com o Rodrigo em agosto de 2018. Inicialmente, fazíamos os treinos no prédio, com equipamentos básicos e o 
+                            peso do próprio corpo. Conforme os resultados foram aparecendo e a vontade de ir além aumentava, sentimos que estava na hora de 
+                            elevarmos o nível e nos matriculamos em uma academia. Já havíamos passado por diversas experiências com academia, mas até então 
+                            sem a orientação do Rodrigo, assim nunca tínhamos o resultado desejado e acabávamos desistindo. Desta vez foi diferente, pois o 
+                            trabalho e empolgação do Rodrigo nos motivam, cada treino é único e exclusivo, os desafios propostos nos fazem querer superar nossos 
+                            limites, os resultados aparecem e é gratificante. 
+                            A satisfação de olhar fotos de pouco mais de 2 anos atrás em comparação ao que se vê no espelho agora é impagável. Treinar com o 
+                            Rodrigo é nunca sentir monotonia, a hora passa depressa e melhora o astral para todo o dia.
+                        </span>
+                        
+                        <div>
+                            <img src="img/rodrigo.jpeg" width="300px" height="300px" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="deep">
-                <div class="side-one">
-                    <h3>Ivani</h3>
-                    <span font>
-                        Começamos a treinar com o Rodrigo em agosto de 2018. Inicialmente, fazíamos os treinos no prédio, com equipamentos básicos e o peso do próprio corpo. Conforme os resultados foram aparecendo e a vontade de ir além aumentava, sentimos que estava na hora de elevarmos o nível e nos matriculamos em uma academia. Já havíamos passado por diversas experiências com academia, mas até então sem a orientação do Rodrigo, assim nunca tínhamos o resultado desejado e acabávamos desistindo. Desta vez foi diferente, pois o trabalho e empolgação do Rodrigo nos motivam, cada treino é único e exclusivo, os desafios propostos nos fazem querer superar nossos limites, os resultados aparecem e é gratificante. 
-A satisfação de olhar fotos de pouco mais de 2 anos atrás em comparação ao que se vê no espelho agora é impagável. Treinar com o Rodrigo é nunca sentir monotonia, a hora passa depressa e melhora o astral para todo o dia.
-                    </span>
-                </div>  
-
-                <div class="side-two">
-                    <img src="img/rodrigo.jpeg" alt="">
-                </div>
-            </div>
-        </div>
+       </div>
     </div>
+
 
     <footer>
         © Rodrigo Rodrigues. Todos os direitos reservados. CNPJ: 30.779.521/0001-50
